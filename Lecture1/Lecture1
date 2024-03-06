@@ -100,6 +100,9 @@ The quality of the design is also very important - while coding the most importa
 
 variables 
 
+Variables should be named in such a manner that it makes sense . Dont use the names which does n't make any sense. 
+The best way is to name the variable upon its objective .
+
 counter+=1 can also be written as counter++
 also counter -=1 can also be written as counter--
 
@@ -136,11 +139,11 @@ char -
 
 int main(void){
     char c = get_char("Do you agree? ");
-    if (c =='y'){
+    if (c =='y' || c =='Y'){
         printf("I agree \n");
 
     }
-    else if (c == 'n'){
+    else if (c == 'n' || c == 'N'){
         printf("I don't agree \n");
     }
     else printf("Please enter a valid input \n");
@@ -150,3 +153,60 @@ when using a string we should use double quotes whereas we should use single quo
 
 we can use logical OR , 
 There's a saying in programming - IF U R REPEATING SOMETHING, THERE IS SOMETHING WRONG .
+
+loops: 
+
+#include<stdio.h>
+
+int main(){
+    int counter = 3;
+    while(counter >0){
+        printf("This is the counter number = %i \n", counter);
+        counter--;
+    }
+}
+
+There 's a rule of thumb , if you find yourself copying something again and again , you are probably doing something wrong . 
+
+generally , count something from 0 which is also a conventional way .
+
+for loop 
+
+for(int i=0;i< 3;i++){
+    printf("i want to be a programmer \n");
+}
+
+while loop :-
+if you want to go on the loop forever , the following can be used .
+
+while(true){
+    printf("meow\n");
+}
+
+
+
+Function creation 
+
+void meow(void){
+    printf("meow\n");
+}
+
+i believe there's is a lot of syntax we have learnt , this is going to continue for long . 
+
+we are going to learn about different operators in c 
+which are + , -,*,/,%
+#include <stdio.h>
+#include <cs50.h>
+
+int add(int x , int y);
+int main(){
+    int x = get_int("What's x ");
+    int y = get_int("What's y ");
+    int answer = add(x,y);
+    printf("%i\n",answer);
+}
+int add(int a,int b){
+    return a + b;
+}
+
+we can use a function inside a function which we have seen earlier in the mathematics journey. 
