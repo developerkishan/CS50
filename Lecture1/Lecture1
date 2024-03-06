@@ -210,3 +210,63 @@ int add(int a,int b){
 }
 
 we can use a function inside a function which we have seen earlier in the mathematics journey. 
+
+
+
+Linux - Linux is a very popular operating system. All the server out there uses some version of Linux . 
+Those students who are more comfortable runs Linux on their on systems . 
+It is particularly popular because of its textual interface  (CLI - Command Line Interface )
+Graphical User Interface - the view with buttons .
+
+Lets talk about the bigger picture here - what exactly is happening in the cloud version of the cs50?
+we have created a server - which is basically a docker container . As the machine starts up and only we have the access to the particular container . 
+Once we have the access to the container running on the linux server , we are running the commands with the help of the terminal . 
+So There are various commands which can be used for the Linux server which are - 
+cd , cp ,ls , mkdir , mv ,rm ,rmdir  
+this is going to be challenging using the commands but trust me it is going to be far more easy and productive .
+mv meow.c goodbye.c
+rm hello.c 
+
+
+
+CONST keyword 
+
+DO while loop - If there is a situation which we want to do atleast once . the best option is to use do while . 
+
+int n ;
+do{
+    n = get_int("What's n " );
+}while (n<1)
+
+
+comments :
+a note to self and its a very important . 
+// 
+
+Memory :
+Random Access Memory popularly known as RAM .
+
+Integer overflow :
+
+we dont store numbers on the basis of the values , rather we store it on the basis of the bits . 
+ 1 byte = 8 bits 
+int = 4 byte which is 32 bits . every  
+2 billion is the max at one end can be counted 
+
+Long : 
+%li - is the character to print the long integer 
+
+%f - float should be used as the character  
+%5f - it will give me 5 decimal places .
+
+
+Type casting 
+ typing something to another . example (float )
+
+
+Floating point imprecision and the integer overflow are two major problems because of the memory constraints . 
+
+Y2K - 
+
+
+correctness , design , style 
