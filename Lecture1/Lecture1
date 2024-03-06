@@ -1,0 +1,152 @@
+Lets discuss something about programming - 
+How machine knows what are we trying to do ? 
+Firstly , We write a source code and then eventually the source code is converted to Machine code which is understood by the machine .
+Everything is brought under the umbrella that we send something into input and comes something out of that . 
+We are going to need something which translates the source code into the machine code . This is called as Compiler .
+A compiler can be written by a Facebook , Google , Apple . What we do is  we download the compiler and get the things done . 
+
+Visual studio code for cs50 .
+we are going to use the cloud version of the visual studio code and make things easy . 
+https://cs50.dev 
+we are going to learn multiple things - 
+we are not going to use the GUI version whereas we are going to use the CLI - command line interface .
+
+how do we run the c program in the terminal ?
+ code hello.c 
+ make hello
+ ./hello 
+
+ We are going to follow few convention while naming the program -
+ we will only use smallcase 
+ we will not use spaces . 
+we will use the required extension . 
+
+
+So when we use the make statements , it will be very smart . It is going to convert the code present in the source code and convert it to the machine code .
+
+\n - is used to go to next line . 
+
+why is the \n is inside the quotation mark ? Because that is how the syntax is done . 
+\n is a special pattern which tells the printf that you want to move to the next line.
+
+What are functions ?
+Functions are basically the way or the instructions about how the things needs to be performed .
+
+printf("hello, World \n");
+
+\n is known as escape sequences . 
+
+include stdio.h - is basically a way of including the various other function which are used in the programs. 
+
+What is a library ? Library is a code which someone else has wrote and which is open source.  Literally , You can use it in your code .
+It can be closed source too . 
+Libraries are the best source to use in you code. 
+
+Libraries tells us that someone else can do  the hard work and we can solve the better problems .
+
+manual Pages - manual.cs50.io
+
+Programming is about finding answers to the problems we are trying to solve. Its not about knowing everything but knowing every ways to try and solve it 
+
+
+get_char 
+get_double 
+get_float 
+get_string
+get_long
+
+Functions 
+
+Functions are instruction which does some activity for you , It can take arguments and return a value if required . 
+get_string is for now going to be the most analogous function we are going to use . 
+
+string answer = get_string("What's your name? ");
+
+printf("Hello ,%s \n",answer);
+
+
+#include <stdio.h>
+#include <cs50.h>
+ int main(){
+    string answer = get_string("What's your name ? ");
+    printf()
+ }
+
+%s - string printing 
+%i - integer printing 
+
+conditionals are the ways to make a decision . It is almost omnipresent and used everywhere .
+
+if(x<y>){
+    printf("x is less than y \n");
+
+}
+technically , if we have only one line in the if else code ,we can remove the curly brackets .
+
+if (x<y>){
+
+}else if(){
+
+}
+else if (12==14){
+
+}
+else{
+
+
+}
+
+The quality of the design is also very important - while coding the most important is to check whether we need to 
+
+variables 
+
+counter+=1 can also be written as counter++
+also counter -=1 can also be written as counter--
+
+
+# include <stdio.h>
+#include <cs50.h>
+int main(void){
+    int x = get_int("what's x ");
+    int y = get_int("what's y ");
+
+    if(x <y){
+        printf("x is less then y \n");
+    }
+    else if (x > y){
+        printf("x is greater then y \n");
+    }
+    else{
+        printf("x is equal to y \n");
+    }
+}
+
+why are we not using only ifs because it gives us the correct response too but its not correctly designed . 
+The point to note here is that , we have to make the application design correctly . 
+Getting correct response is not only going to help us but design perspective should be good . 
+
+we will come to know that the languages like c , c++ are very vulnerable to hacking whereas the other languages are not . 
+
+string - is indeed a string of text 
+char - 
+
+
+#include <stdio.h>
+#include <cs50.h>
+
+int main(void){
+    char c = get_char("Do you agree? ");
+    if (c =='y'){
+        printf("I agree \n");
+
+    }
+    else if (c == 'n'){
+        printf("I don't agree \n");
+    }
+    else printf("Please enter a valid input \n");
+}
+
+when using a string we should use double quotes whereas we should use single quotes in case of char .
+
+we can use logical OR , 
+There's a saying in programming - IF U R REPEATING SOMETHING, THERE IS SOMETHING WRONG .
