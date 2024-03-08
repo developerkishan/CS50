@@ -1,0 +1,65 @@
+Last week we talk about various building blocks of the progrmming language . Now we are going to talk about the application of these ,which is what is important in every field . 
+Cryptography - It is a science of encrypting the actual messages and then decode it when received by the required person.
+
+What are command line interface ? 
+Command line interface helps us to write the commands through the terminal . 
+It is very usefull for the development purpose . 
+
+clang -o hello hello.c
+./hello 
+The about command line argument is tedious , So the command make help us to write the command in a better way . 
+make 
+
+Let's talk about compiling - 
+Compiling is combined of the four steps - 
+preprocessing 
+what is this all about ?
+The main task of preprocessing is to keep the prototype of the file , it helps us to replace the functions which are available in the library.
+#include <cs50.h> - In the preprocessing steps , the # symbol will be replaced by the functions prototype which we are taking from the library .
+compiling
+it converts the source code to the assembly language . it is not zeros and ones .
+assembling 
+It is the process in which the assembly code is converted into the machine language . It is the language which machine care about . It is zeros and ones and this language is understood by machine .
+
+linking 
+It links all the code and helps to run the program smoothly . 
+For an example - it links all the files for example - cs50 , stdio.h and the hello will all be linked in this step .
+
+
+What are the complications going from the source code to the machine code ?
+Reverse Engineering 
+Debugging
+
+the following are the ways to think about debugging:-
+1. Printf
+The Printf function helps us to write the programs , it helps us to write the programs efficiently . 
+For understanding a logical problem , we need to use the printf solution and try to find out what is going wrong . 
+
+2. Debugger 
+make hello 
+debug50 ./hello 
+Before using the above command for the debugging , we need to point a line in the code and set a breakpoint . 
+step over , step into , resume are the few important features of the debugger mode .
+Step over - means go to the next line after executing this line .
+step into - it helps me to poke around the function , if the code is available in the memory . 
+
+3. Talking Duck (Rubber Duck debugging)
+talk to the object , and then eventually you will come into a solution . 
+
+4. cs50.ai
+
+
+
+bool 1 byte 
+int 4 byte  - 32 bits - so 2^32 
+long 8 byte 
+double 8 byte 
+float 4 byte 
+char 1 byte 
+string ? 
+
+How does the arrays comes into picture ?
+If suppose there are 100 of the scores you want to calculate and then work on it , It is best suited to use the use the arrays because you are just going to use the repetion , if incase we are using the particular variables . 
+
+
+An array is a sequence of values back to back to back . 
