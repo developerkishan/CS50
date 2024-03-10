@@ -63,3 +63,13 @@ If suppose there are 100 of the scores you want to calculate and then work on it
 
 
 An array is a sequence of values back to back to back . 
+int scores[3];
+
+scores[0] = 71;
+scores[1] = 73;
+scores[2] = 78;
+
+what's a global variable ? 
+A variable which is outside the main function and they want to access it from anywhere. 
+
+
