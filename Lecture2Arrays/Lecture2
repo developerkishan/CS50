@@ -101,4 +101,13 @@ int main (int argc , string argv[]){
         return 0;
     }
 }
-if we need to know what is the exit code which has returned , you can check with the help of the co
+if we need to know what is the exit code which has returned , you can check with the help of the commands.
+
+
+
+I am going to share the most important concepts of coding which i have learnt doing it from past few days -
+When ever there is a question given , don't immediately start to write the code , Firstly make sure that you write the pseudo code and then eventually work on it. 
+
+Think right for the question , focus on the problem and eventually you will get a better answer . 
+
+Think First and then write anything. 
