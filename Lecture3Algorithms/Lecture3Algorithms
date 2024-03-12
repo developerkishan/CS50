@@ -1,0 +1,82 @@
+we are going to think particularly on the How to think algorithmically ?
+
+Our moto is to get the problem and try to solve it with the help of the algorithms and develop a metality which is going to help us solve problems.
+What is an array ? An array is a sequence of a characters indexed from 0 to n , where n is the number of elements. 
+It is stored in a consective manner aka contigous .It is stored in an contigous manner. 
+
+searching
+searching is basically checking whether the information is available or not . Search can be performed in many things. 
+Linear search - Any time you search from Left or from the right to the end is called Linear search 
+It is same as walking in the line , doesn't matter which way it is . 
+
+
+let's discuss about the pseudo code - 
+incase we are finding any value -
+while(to the end){
+    if (value ==50)
+    return true;
+return false ; 
+}
+
+So the pseudo code is basically the idea to identify the code , or the instructions which we are trying to find . 
+
+
+
+Binary Search (Divide and conquer){
+
+}
+    while condition (start < end){
+start with the middle 
+   if (the number is equal to 50)
+        return true;
+    else if (number < 50 ){
+        start =
+        end = 
+
+    }   
+    else if (number > 50 ){
+        start =
+        end = 
+    } 
+    }
+   
+   return false ;
+
+   so whenever you are starting  with the programming language , start with writting the code which is pseudo code .
+   When u have the objective about what needs to be done , the program becomes a lot easy .
+
+
+   now lets discuss the running time of these algorithms -
+
+   while discussing about the time and efficiency of an algorithm , they come across an term which is mentioned below.
+   Big O notation - it tells about the algorithm is going to perform with the increase in the size of the problme .
+   Big O always gives us the upper bound and its always the worst case scenario. 
+
+    
+   O(n *n) - It is the 2 for loop . 
+   O(n log n) - It is the 
+   O(n)- it is the linear search .
+   O(log n)- It is the best time possible.  This is the Binary search .
+   O(1)- It is the constant time which we care about . 
+
+
+   Omega gives us the lower bound . It gives us the lower bound and best possible scenario. 
+   omega(1) - It is best case for the linear and the binary search 
+
+
+
+   Lets translate this in the binary search .
+
+
+   need to implement linear search with number 
+   need to implement linear search with strings .
+   Implement phonebook 
+
+
+   It is best said that when you dont want to do any math on the numbers , take it as a string . 
+
+
+
+Data structures - 
+Array was part of the data structure but then we want to bring out the new ways to store the values better . 
+It is
