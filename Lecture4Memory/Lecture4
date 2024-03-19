@@ -1,4 +1,26 @@
 This is the session which is going to make cs50 the cs50 .
+We are going to study about Pointers , Segmentation Faults , Dynamic Memory Allocation, Stack , Heap , Buffer Overflow , File I/O Images .
+What are Pointers ?
+Pointers are reference to the variables or the address of the variables. 
+*n 
+&n
+
+What are Segmentation Faults ?
+Segmentation Faults are the faults which occurs when we try to touch the memory which is not allocated for the particular variables .
+
+What is Dynamic Memory Allocation ?
+Dynamic Memory Allocation is the allocation of memory when there is any requirement. 
+
+What is Stack ?
+Stack is the allocation of the system memory upon the creation of the variable or functions ,it helps in the running of the program smoothly . 
+
+What is heap memory ?
+Heap memory stores the global variables used by the program . 
+
+What is buffer overflow ?
+Buffer Overflow is the overflow of the stack and the heap memory . 
+
+
 In this session we are going to learn about the basic building blocks of the code and what is the thing which is running on the behind .
 We are going to learn about hte memory , which is the most important characterstics of a machine . 
 we are infact going to know about the best ways to make the use of this memory.
@@ -55,3 +77,99 @@ What are the fields which is going to make great about this industry ?
 Does this process of learing new things is going to help u ? 
 Does this process helps you to stay organized ? 
 Are you going to make the best version of yourself by focusing on this technologies ? 
+
+
+All we see in our machine is pixels. When we talk about the image which we are seeing in our computer , it is actually the pixels .
+So , in terms of the machine when we write programming , we write code in binary and decimal representation . 
+But when we talk about the colours it is represented in the Hexa Decimal format .
+
+0123456789ABCDEF
+
+Till this time , we were using the string keyword in the c programming but what is it behind the scenes. 
+string is just char* 
+when we call the char* s = (It gives us the memory to story the string)
+
+char *s = Kishan;
+%s - s (This will give us the value of the complete string)
+printf("The address is %p \n", s);
+    printf("The address is %p \n", &s[0]);
+    printf("The value prsent in the s is %c \n",s[4]);
+    printf("The value prsent in the s is %s \n",s);
+    printf("The value prsent in the s is %c \n",*s);
+    printf("The value prsent in the s is %c \n",*(s+1));
+
+    printf("The value prsent in the s is %c \n",s[1]);
+
+
+When we compare the strings , we basically compare the addresses instead of the values . 
+so we need to use strcmp
+when we copy the strings , we basically copy the address , a slight change in one is going to result a change with the same string  .
+ 
+
+ Use of malloc and free 
+ To use the above function , we need to use the stdlib.h
+
+
+ Garbage .
+
+ scope 
+ passing by value / passing by copy     
+ passing by reference 
+
+
+Stack 
+ The functions such as the main functions / swap functions values are stored in the stack memory . 
+
+ Stack overflow
+
+ Heap overflow 
+
+ Buffer overflow.
+
+ Segmentation fault - It is the memory which you have tried to use but should n't be used. 
+
+
+File I/O
+ fopen 
+ fclose
+ fprintf - major takes two input , one the file name other the values what needs to be printed. 
+ fscanf
+ fread
+ fwrite
+ fseek
+
+
+
+phonebook.c
+
+FILE *file = fopen("Phonebook.c","a");
+if(file ==NULL){
+    return 1;
+}
+char *name = get_string("name :");
+char *number = get_string("number :");
+
+fprintf(file, "%s,%s",name , number);
+
+cp.c 
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <stdint.h>
+
+typedef uint8_t BYTE;
+
+int main(int argc, char* argv[])
+{
+    FILE *src = fopen(argv[1],"rb");
+    FILE *dst = fopen(argv[2],"wb");
+
+    BYTE b;
+    while (fread(&b,sizeof(b),1,src)!=0){
+        fwrite(&b,sizeof(b),1,dst);
+    }
+    fclose(src);
+    fclose(dst);
+}
+
