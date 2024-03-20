@@ -1,0 +1,152 @@
+In this lecture we are going to study about the different data structures . These data structures will help us solve the problems efficiently . It will also help us in better design .
+
+Queues 
+Queues are the basic data structures which has got the below characterstics .
+It follows FIFO characterstics which is First In First Out. 
+
+Enqueue
+Dequeue
+
+const int CAPACITY =50;
+typedef struct{
+    person persons[capacity];
+    int size;
+}queues;
+
+
+STACKS-
+Stacks follows the principle of the LIFO , which is Last In First out . 
+You must have seen in the gmail that , we almost view the latest mails first and we have a habit of getting the latest data first which is called LIFO . 
+
+The two operations performed on the STACKS are  - 
+Push 
+Pop 
+
+const int CAPACITY =50;
+typedef struct{
+    person persons[capacity];
+    int size;
+}stacks;
+
+
+Arrays - what is the one underlying characterstics of Arrays ?
+Arrays needs to store data in a contigous manner . 
+
+
+
+struct  - struct can be used to make a structure of the persons.
+. - . helps us to go to the particular key inside a struct . 
+* - * can be a little confusing but it is used to get the address or sometime get the values . 
+
+Linked List 
+
+typedef struct node {
+    int number ; 
+    struct *node next;
+}node;
+
+
+node *list = NULL;
+
+node *n = malloc(sizeof(node));
+(n*) . number = 1;
+(n*) . next = NULL;
+
+LinkedList program 
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct node {
+    int number;
+    struct node* next;
+}node;
+
+
+int main(int argc, char * argv[])
+{
+
+    node *list = NULL;
+
+    for(int i =1; i<argc;i++)
+    {
+        node *n = malloc(sizeof(node));
+        if(n ==NULL){
+            // certain steps to free up few memory
+            return 1;
+        }
+
+
+        int number = atoi(argv[i]);
+        n -> number = number;
+        n -> next = list;
+        list = n;
+
+    }
+    node * ptr = list;
+    while(ptr != NULL){
+        printf("%i\n" , ptr->number);
+        ptr= ptr->next;
+    }
+
+}
+The below is the code to append the linked list . 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct node{
+    int number;
+    struct node* next;
+}node;
+
+node * list = NULL;
+
+
+int main (int argc , char *argv[])
+{
+
+
+
+    for(int i =1; i < argc; i++)
+    {
+        node * n = malloc(sizeof(node));
+            if(n ==NULL)
+    {
+        return 1;
+    }
+        printf("This is executed \n");
+        int number = atoi(argv[i]);
+            n -> number = number;
+            n->next = NULL;
+        if(list==NULL){
+            list=n;
+        }
+        else{
+            for(node *ptr = list; ptr != NULL; ptr = ptr->next)
+            {
+                printf("The value we have added is %i \n" , n -> number);
+                printf("The value we have LIST has got is %i \n" , list -> number);
+
+                if(ptr->next == NULL){
+                    ptr->next = n;
+                    break;
+                }
+
+
+
+            }
+        }
+    }
+
+
+node * ptr = list;
+printf("The value we have got it %i \n" , ptr -> number);
+    while(ptr != NULL){
+        printf("%i\n" , ptr->number);
+        ptr= ptr->next;
+    }
+
+
+}
+
+
