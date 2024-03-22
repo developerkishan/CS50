@@ -150,3 +150,47 @@ printf("The value we have got it %i \n" , ptr -> number);
 }
 
 
+Binary search trees 
+
+typedef struct node{
+    int number ;
+    struct node * left;
+    struct node* right;
+
+}node;
+
+the searching is going to take only nlogn
+
+
+bool search (node *tree,int number)
+{
+    if (tree==null)
+    {
+        return false;
+    }
+}   else if (number< tree->number)
+{
+    search(tree->left,number);
+}
+    else if (number > tree->number)
+    {
+        search(tree->right,number);
+    }
+    else if (number == tree->number)
+    {
+        return true ;
+    }
+
+
+Dictionaries 
+It stores keys and values 
+
+Hashing 
+It takes any number of outputs and maps them to a particular values . 
+Hash table is an array of a linked list . 
+
+
+Tries
+is a tree of arrays. 
+
+
