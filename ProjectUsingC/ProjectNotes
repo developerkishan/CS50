@@ -1,0 +1,119 @@
+We have learnt the language C and now its time to take a deep understanding about it by making a small project on it . 
+Working on C programming will give us a good fundamental knowledge and will help us in programming better . 
+Let's start . 
+
+
+I got to see the meetup provided by Harkirat .
+
+Engineering 
+How good are you with the code ?
+Product 
+Stategy 
+Hiring
+Eagerness
+Curious 
+Asking Why ?
+Learning Capabilities
+The person that they are hiring should be able to handle to all .
+Communication 
+
+Make Projects 
+Write a blog in medium ?
+Hackathon
+
+Conviction and curiosity 
+Its all about the conviction and curiosity 
+
+
+
+Object Oriented Programming 
+In Python everything is treated as object oriented programming . Lets take an example of string , where the string is considered as object and incase we want to perform any operation to it, we can use the . operator . 
+
+
+s = input("Enter a string:").lower()
+if s in ["y" ,"yes"]:
+    print("agreed")
+elif s in ["n" , "no"]:
+    print("diagree")
+
+
+let's do the uppercase.py 
+docs.python.org
+
+
+before = input("Before :")
+print("After :")
+for c in before:
+    print(c.upper(), end="")
+print()
+
+
+the above can be achieved by 
+before.upper()
+
+before = input("Before :")
+print(f"After: {before.upper()}")
+
+
+
+
+
+def main():
+    meow(5)
+
+def meow(n):
+    for i in range(n):
+        print("meow")
+
+main()
+
+
+Truncation - this problem does not exist 
+floatiing point precision - still a problem
+integer overflow - this problem does not exist 
+
+Exceptions 
+
+
+def main():
+    get_int("Enter a integer value :")
+
+
+def get_int(prompt):
+    try:
+        return int(input(prompt))
+    y = int(input("Enter a second integer value: "))
+    print(x+y)
+
+main
+
+
+
+
+List 
+List is just as the linked list where we dont need to worry about the pointers , structs etc. 
+Everything will be handled on its own . 
+
+
+from sys import argv
+
+if(len(argv)==2):
+    print(f"Hello , {argv[1]}")
+else:
+    print("Hello , World")
+
+
+  
+    for row in rows:
+        if ("Alice" in row['name']):
+            print("Name is found")
+
+                AGATC = longest_match(dna_sequence,"AGATC")
+    AATG = longest_match(dna_sequence,"AATG")
+    TATC = longest_match(dna_sequence,"TATC")   
+
+
+    for row in rows:
+
+        for str in strs:
+        print(strs[str])

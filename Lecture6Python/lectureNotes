@@ -1,0 +1,25 @@
+Python 
+In this lecture we are going to learn about the language python. This language is going to help us in knowing the fundamentals of Python .
+We are marching towards high level programming language , because a lot of abstraction is seen in the python as compared to c. 
+A lot of functions have been returned in python which helps to build something good by making the use of those functions. 
+Python is a intrepreter language i.e it is not necessary to compile this language . 
+
+
+We saw that writing program in python takes very less time and then we no longer need to worry about the memory allocation , freeing memory , pointers etc. 
+
+So how to make out the difference between therse languages ? Why should we not choose python over c? 
+- We see that python takes more memmory as compared to c. 
+- Python takes more time as compared to c in order to compile the code. 
+- C gives you the access to play with the memory . As in we can adjust memory according to our requirement . 
+
+Functions -
+Functions definetly plays a important role in making functions simpler. 
+The functions are same as we have seen in c , its just makes things easier . 
+
+
+
+Libraries 
+import keyword is used to import any functions .
+
+
+I also studied about the Horizontal scaling , Vertical Scaling.  How the cloud technologies help themselves by using the above Scaling properties ? what is the main difference in doing that ?
